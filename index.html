@@ -9,8 +9,57 @@
 
 </head>
 <body>
+  <nav>
+    <ul>
+      <li> <a href = "#hero"> home </a></li>
+      <li> <a href = #portfolio"> portfolio </a></li>
+      <li> <a href = "#about"> about </a></li>
+      <li> <a href = "#contact"> contact </a></li>
+    </ul>
+  </nav>
+
+  <div class = "container">
+    <section class = "hero" id = "hero">
+      <h1>🌸 Hi, I'm Krisha </h1>
+      <p> A place where I share my designs, coding journey and projects. </p>
+      <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})"> View My Work </button>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>My Projects</h2>
+      <div class="p=tiles' id="p-tiles">
+        <div class="project-tile">Project 1</div>
+        <div class="project-tile">Project 2</div>
+        <div class="project-tile">Project 3</div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student with a love for front-end development and UI/UX design. I enjoy building clean, accessible, and meaningful digital experiences — blending logic with creativity. When I’m not coding, I’m usually exploring something artistic or learning just for the joy of it.</p>
+
+      <p>Things I’m passionate about: </p>
+      <p>  
+        📚 language learning 🇫🇷 🇰🇷 🇮🇹 <br>
+        🎧 singing & music <br>
+        🎨 visual design, illustration, and aesthetic interfaces<br>
+        🌐 HTML, CSS, JavaScript & accessibility in tech<br>
+        🤖 AI, NLP, Human-centered Design & Technology <br>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xdkzpwvv" method="POST">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
 
+
+  </div>
 
 
 </body>
