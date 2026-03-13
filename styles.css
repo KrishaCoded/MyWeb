@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #feebf3;
+    font-family: raleway;
+
+}
+
+/* Nav bar */
+nav {
+    background-color: feebf3;
+    width:100%;
+    padding:30px;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 30px;
+    padding:0 50px;
+
+}
+
+nav li {
+    display: inline;
+    text-decoration: none;
+    width: fit-content;
+    margin-right: 20px;
+
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10;
+    margin-top: 5%;
+} 

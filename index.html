@@ -12,7 +12,7 @@
   <nav>
     <ul>
       <li> <a href = "#hero"> home </a></li>
-      <li> <a href = #portfolio"> portfolio </a></li>
+      <li> <a href = "#portfolio"> portfolio </a></li>
       <li> <a href = "#about"> about </a></li>
       <li> <a href = "#contact"> contact </a></li>
     </ul>
@@ -20,9 +20,24 @@
 
   <div class = "container">
     <section class = "hero" id = "hero">
-      <h1>🌸 Hi, I'm Krisha </h1>
-      <p> A place where I share my designs, coding journey and projects. </p>
-      <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})"> View My Work </button>
+      <div class = "hero-text"> 
+        <h1>🌸 Hi, I'm Krisha </h1>
+        <p> A place where I share my designs, coding journey and projects. </p>
+        <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})"> View My Work </button>
+      </div>  
+
+      <div class="social-sidebar">
+        <a href="https://fable.co/fabler/krisha-527102027825?referralID=tcH761aw1A" target="_blank" aria-label="fable">
+          <img src="assets/fable.png" alt="Fable">
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+          <img src="assets/github.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/krisha-gurung" target="_blank" aria-label="LinkedIn">
+          <img src="assets/linkedin.png" alt="YouTube">
+        </a>
+      </div>
+
     </section>
 
     <section class="portfolio" id="portfolio">
