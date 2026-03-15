@@ -1,41 +1,154 @@
+/* 1. Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.1rem; /* Slightly larger for that clean UI/UX feel */
+    line-height: 1.6;   /* Adds breathing room between lines of text */
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 600; /* Extra bold for the hero section */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 2rem; /* Slightly smaller for hero text */
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    font-weight: 100;;
+}
+
+.hero button {
+    margin-left: 5rem;
+    padding:0.7rem;
+    border-radius: 10px;
+    border-color: #bb80f7;
+    background-color: #b367ff;
+    color: whitesmoke;
+    
+}
+
 html {
     scroll-behavior: smooth;
+    /* Setting base font-size for easier rem math (1rem = 16px) */
+    font-size: 16px; 
 }
 
 body {
     background-color: #feebf3;
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif; /* Ensure fallback is present */
+    line-height: 1.6;
+}
+
+/* Navigation Layout */
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, UL right */
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #feebf3;
+}
+
+.nav-logo img {
+    height: 80px;
+    width:auto;
+    transition: transform 0.3s ease;
 
 }
 
-/* Nav bar */
-nav {
-    background-color: feebf3;
-    width:100%;
-    padding:30px;
-    position: relative;
+.nav-logo img:hover {
+    transform: rotate(-5deg) scale(1.1) scaleX(-1);
+    height: 60px;
+    width: auto;
+    transform: scaleX(-1)
 }
 
 nav ul {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 30px;
-    padding:0 50px;
-
-}
-
-nav li {
-    display: inline;
-    text-decoration: none;
-    width: fit-content;
-    margin-right: 20px;
-
+    gap: 2rem;
+    padding: 2% 5%; /* Responsive horizontal padding */
 }
 
 nav a {
     color: #000000;
     text-decoration: none;
-    margin-right: 10;
-    margin-top: 5%;
-} 
+    font-weight: 300;
+    transition: color 0.3s;
+    padding:1rem;
+}
+
+nav a:hover {
+    color: #ff5858; /* Matches your laptop color */
+}
+
+/* 3. Hero Section */
+/* Tightening the Hero Spacing */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;   /* Reduced from 60vh to pull content up */
+    padding:  10%;     /* Removed top/bottom padding to fix the gap */
+    margin-top: -2rem;  /* Pulls the hero section closer to the nav */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 0.5rem;
+}
+
+/* 4. Social Sidebar */
+.social-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem; /* Fixed: removed space in '1.5 rem' */
+}
+
+.social-sidebar img {   
+    width: 2.5rem; /* Using rem for scaling */
+    transition: transform 0.3s ease;
+}
+
+.social-sidebar img:hover {
+    transform: scale(1.2);
+}
+
+/* 5. Responsive Media Query */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stacks text on top of icons */
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav ul {
+        justify-content: center; /* Centers menu on mobile */
+        padding: 0;
+    }
+
+    .social-sidebar {
+        flex-direction: row; /* Horizontal icons for mobile */
+        margin-top: 2rem;
+    }
+}
+
