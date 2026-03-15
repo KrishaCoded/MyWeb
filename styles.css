@@ -118,7 +118,7 @@ nav a:hover {
     pointer-events: auto; /* ensures they react to mouse */
 }
 
-#fl-1 {top: 3%; left: 45%; transform: rotate(15deg);}
+#fl-1 {top: 27%; left: 43%; transform: rotate(15deg);}
 #fl-2 {bottom: 20%; right: 25%; transform: rotate(-73deg);}
 #fl-3 {top: 5%; left: 90%; transform: rotate(105deg); -width: 2rem; }
 
