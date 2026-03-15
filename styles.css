@@ -105,12 +105,27 @@ nav a:hover {
     min-height: 50vh;   /* Reduced from 60vh to pull content up */
     padding:  10%;     /* Removed top/bottom padding to fix the gap */
     margin-top: -2rem;  /* Pulls the hero section closer to the nav */
+    overflow:hidden;
+    position: relative;
 }
+
+.flower {
+    position: absolute;
+    width: 3rem;
+    opacity: 0.3;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: auto; /* ensures they react to mouse */
+}
+
+#fl-1 {top: 3%; left: 45%; transform: rotate(15deg);}
+#fl-2 {bottom: 20%; right: 25%; transform: rotate(-73deg);}
+#fl-3 {top: 5%; left: 90%; transform: rotate(105deg); -width: 2rem; }
+
 
 .hero-content {
     max-width: 600px;
 }
-
 
 .hero-content h1 {
     font-size: clamp(2.5rem, 6vw, 4rem);
