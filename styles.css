@@ -180,6 +180,11 @@ nav a:hover {
         flex-direction: row; /* Horizontal icons for mobile */
         margin-top: 2rem;
     }
+
+    .p-tiles {
+        grid-template-columns: 1fr; /* Force one card per row on mobile */
+        padding: 2rem 5%;
+    }
 }
 
 .p-tiles {
