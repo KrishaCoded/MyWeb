@@ -182,3 +182,58 @@ nav a:hover {
     }
 }
 
+.p-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 10%;
+}
+
+.project-tile {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden; /* Keeps the top image from spilling over the rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px); /* matched hero button pop */
+}
+
+/* Inner card spacing */
+.project-info {
+    padding: 1.5rem;
+}
+
+/* The purple tech tags */
+.tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-tags span {
+    background-color: #a29bfe; /* Your bunny purple */
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Links/Buttons */
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-code, .btn-demo {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-code { background: #eee; color: #333; }
+.btn-demo { background: #fdf0f5; color: #d63384; }
