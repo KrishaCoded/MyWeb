@@ -41,6 +41,17 @@ p {
     
 }
 
+.hero button:hover {
+    transform: translate(-5px); /* subtle "pop" */
+    box-shadow: 0 8px 15px rgba(114, 105, 239, 0.4);
+    background-color: #b2a9ff;
+}
+
+.hero button:active {
+    transform: translateY(-2px);    /* squish down a lil when clicked */
+    box-shadow: 0 2px 0px #6c5ce7;
+}
+
 html {
     scroll-behavior: smooth;
     /* Setting base font-size for easier rem math (1rem = 16px) */
@@ -118,10 +129,14 @@ nav a:hover {
     pointer-events: auto; /* ensures they react to mouse */
 }
 
+.flower:hover {
+    transform: scale(1.5) rotate(360deg);
+    opacity: 0.8;
+}
+
 #fl-1 {top: 27%; left: 43%; transform: rotate(15deg);}
 #fl-2 {bottom: 20%; right: 25%; transform: rotate(-73deg);}
 #fl-3 {top: 5%; left: 90%; transform: rotate(105deg); -width: 2rem; }
-
 
 .hero-content {
     max-width: 600px;
