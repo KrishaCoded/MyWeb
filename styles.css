@@ -82,7 +82,7 @@ nav {
 
 .nav-logo img:hover {
     transform: rotate(-5deg) scale(1.1) scaleX(-1);
-    height: 60px;
+    height: 80px;
     width: auto;
     transform: scaleX(-1)
 }
