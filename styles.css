@@ -187,11 +187,17 @@ nav a:hover {
     }
 }
 
+
+.portfolio h2 {
+    text-align: center;
+}
+
 .p-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem 10%;
+    padding-top:.2rem;
 }
 
 .project-tile {
