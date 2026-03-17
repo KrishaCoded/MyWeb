@@ -42,7 +42,7 @@ p {
 }
 
 .hero button:hover {
-    transform: translate(-5px); /* subtle "pop" */
+    transform: translateY(-5px); /* subtle "pop" */
     box-shadow: 0 8px 15px rgba(114, 105, 239, 0.4);
     background-color: #b2a9ff;
 }
@@ -114,7 +114,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     min-height: 50vh;   /* Reduced from 60vh to pull content up */
-    padding:  10%;     /* Removed top/bottom padding to fix the gap */
+    padding: 2rem 10%;     /* Removed top/bottom padding to fix the gap */
     margin-top: -2rem;  /* Pulls the hero section closer to the nav */
     overflow:hidden;
     position: relative;
@@ -202,9 +202,9 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.1rem;
-    padding: 2rem .5%;
+    padding:0;
     padding-top:.2rem;;
-    width:95%
+    width: 100%;
 }
 
 .project-tile {
