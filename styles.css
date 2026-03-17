@@ -113,7 +113,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 50vh;   /* Reduced from 60vh to pull content up */
+    min-height: 65vh;   /* Reduced from 60vh to pull content up */
     padding: 2rem 10%;     /* Removed top/bottom padding to fix the gap */
     margin-top: -2rem;  /* Pulls the hero section closer to the nav */
     overflow:hidden;
