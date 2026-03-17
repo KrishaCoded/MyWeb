@@ -187,6 +187,12 @@ nav a:hover {
     }
 }
 
+#portfolio {
+    background-color: #fad7e2; /* A slightly lighter/cooler pink than your Hero */
+    padding: 6rem 10%;       /* Big padding to make it feel like a "zone" */
+    border-radius: 50px 50px 0 0; /* Rounds the top corners so it "hugs" the Hero */
+    margin-top: -2rem;        /* Pulls it up slightly to overlap the Hero section */
+}
 
 .portfolio h2 {
     text-align: center;
@@ -195,9 +201,10 @@ nav a:hover {
 .p-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem 10%;
-    padding-top:.2rem;
+    gap: 2.1rem;
+    padding: 2rem .5%;
+    padding-top:.2rem;;
+    width:95%
 }
 
 .project-tile {
