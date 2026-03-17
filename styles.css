@@ -224,11 +224,20 @@ nav a:hover {
     padding: 1.5rem;
 }
 
+.project-info h3 {
+    font-size: 1.5rem;
+}
+
+.project-info p{
+    font-size: 1rem;
+}
+
 /* The purple tech tags */
 .tech-tags {
     display: flex;
     gap: 0.5rem;
     margin: 1rem 0;
+    font-size: .1rem;
 }
 
 .tech-tags span {
