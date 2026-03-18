@@ -317,7 +317,7 @@ nav a:hover {
 .about-text h2 {
     font-size: 2.5rem;
     font-weight: 900;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
 }
 
 .about-text p {
@@ -335,15 +335,27 @@ nav a:hover {
 .about-vibe h3{
     font-weight: 900;
     font-size: 1.5rem;
-    margin-bottom: .3rem;
+    margin-bottom: 0.1rem;
 }
 
 .vibe-list li {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
     list-style-type: none;
-    padding-left:2%;
-    
+    padding-left:1rem;
+    border-left:3px solid #fad7e2;  /* solid pink line on left*/
+    transition: transform 0.2s ease;
+
+}
+
+.vibe-list li:hover {
+    transform: translateX(5px); /* Subtle slide on hover */
+    color: #000; /* Matches your laptop pink */
+}
+
+.vibe-list li span {
+    font-size: 1.2rem;
+    min-width: 25px;
 }
 
 .status-code {
