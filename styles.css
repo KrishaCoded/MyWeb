@@ -358,4 +358,90 @@ nav a:hover {
     min-width: 25px;
 }
 
+/* Contact Page */
+#contact {
+    padding:8rem 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #feebf3;
 
+}
+
+.contact-container {
+    background: white;
+    padding: 4rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);   /* soft shadow */
+    max-width:fit-content;
+    width:100%;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color:#333;
+
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 2.5rem;
+    max-width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;   /* keeps text aligned inside inputs for better UX */
+
+}
+
+/* base style for input & text-area */
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 1.1rem;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    background-color: #fbfbfb;
+    font-family: inherit; /* Very important for matching typography! */
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-container textarea {
+    resize: none; /* Prevents users from breaking your layout */
+}
+
+/* INTERACTION: Focused state, turns input into your main palette colors */
+.contact-container input:focus, .contact-container textarea:focus {
+    border-color: #a29bfe; /* Lavender focus from your previous images */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(162, 155, 254, 0.1); /* Subtle glow */
+}
+
+/* Button style from your previous images, re-colored for a soft palette */
+.contact-btn {
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: #fad7e2; /* Pink button background from previous images */
+    color: #d63384; /* Deep pink text */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-5px); /* Matched "pop" hover effect */
+    background-color: #d63384; /* Switches colors on hover */
+    color: white;
+    box-shadow: 0 10px 20px rgba(214, 51, 132, 0.2);
+}
