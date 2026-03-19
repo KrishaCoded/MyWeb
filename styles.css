@@ -277,6 +277,7 @@ nav a:hover {
     align-items: center; 
     justify-content: center;
     height:100vh;
+    margin-top: -2rem;
 }
 
 .about-card-container {
@@ -444,4 +445,11 @@ nav a:hover {
     background-color: #d63384; /* Switches colors on hover */
     color: white;
     box-shadow: 0 10px 20px rgba(214, 51, 132, 0.2);
+}
+
+
+footer p{
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 300;
 }
