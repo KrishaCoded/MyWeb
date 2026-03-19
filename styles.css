@@ -276,7 +276,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    height:100vh;
+    height:auto;
     margin-top: -2rem;
 }
 
@@ -361,17 +361,17 @@ nav a:hover {
 
 /* Contact Page */
 #contact {
-    padding:8rem 10%;
+    padding:2rem 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #feebf3;
+    background-color: #fad7e2; /* A slightly darker pink than Hero */
 
 }
 
 .contact-container {
     background: white;
-    padding: 4rem;
+    padding: 4.5rem;
     border-radius: 40px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);   /* soft shadow */
     max-width:fit-content;
@@ -448,8 +448,13 @@ nav a:hover {
 }
 
 
+footer {
+    background-color: #fad7e2;
+}
+
 footer p{
     text-align: right;
     font-size: 1rem;
     font-weight: 300;
+    
 }
