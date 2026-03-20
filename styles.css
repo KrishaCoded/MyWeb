@@ -458,3 +458,26 @@ footer p{
     font-weight: 300;
     
 }
+
+/* scattered flowers */
+section {
+    position: relative;
+    overflow: hidden; /* Ensures flowers don't spill out of their sections */;
+}
+
+/* style flowers that JS will create */
+.scattered-flower {
+    position: absolute;
+    width: 2.5rem;  /*` Using rem for better scaling across devices - size of flower */
+    opacity: 0.2;
+    z-index: 5; /* sits BEHIND bento cards but in FRONT of the background */
+    pointer-events: none; /* ensures they react to mouse */
+}
+
+.about-card-container, .contact-container, .project-tile{
+    position: relative; 
+    z-index: 10; /* Keeps your actual content in front of the flowers */
+}
+
+
+
