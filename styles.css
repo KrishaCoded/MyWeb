@@ -250,6 +250,14 @@ nav a:hover {
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1; /* Ensures text is vertically centered */
+    min-height: 1.5rem; /* Sets a minimum height for better visual consistency */
+    flex-wrap: wrap; /* Allows tags to wrap to the next line if they exceed the width of the card */
 }
 
 /* Links/Buttons */
