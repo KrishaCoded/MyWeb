@@ -34,6 +34,7 @@ function generateFlowers(sectionId) {
 // Your Step 4 stays the same, but notice we don't need the 'count' anymore
 // because the 'zones' array determines how many flowers (6 per section)
 window.addEventListener('DOMContentLoaded', () => {
+    generateFlowers('hero');
     generateFlowers('portfolio');
     generateFlowers('about');
     generateFlowers('contact');
