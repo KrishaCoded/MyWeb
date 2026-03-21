@@ -486,7 +486,7 @@ section {
 
 /* Footer */
 .site-footer {
-    background-color: #fad7e2; /* The 'Contact Zone' pink */
+    background-color: #feebf3; /* The 'Contact Zone' pink */
     padding: 5rem 10% 2rem 10%;
     font-family: 'Raleway', sans-serif;
     position: relative;
@@ -498,6 +498,7 @@ section {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .footer-logo {
@@ -559,7 +560,7 @@ section {
     margin-left: 7rem;
     margin-right:7rem;
     margin-bottom: 1rem;
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 /* This is your new 'Dreamed up' line */
 .footer-tagline {
