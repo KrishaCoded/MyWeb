@@ -373,6 +373,23 @@ nav a:hover {
     min-width: 25px;
 }
 
+@media (max-width: 1024px) {
+    .about-card-container {
+        flex-direction: column; /* Stacks the image on top of the text */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .about-image-card, .about-content-card {
+        width: 100%;       /* Makes them take full width of the container */
+        max-width: 600px;  /* Prevents them from getting too wide on tablets */
+    }
+
+    .about-image-card {
+        height: 350px;     /* Sets a fixed height for the avatar when stacked */
+    }
+}
+
 /* Contact Page */
 #contact {
     padding:2rem 10%;
