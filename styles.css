@@ -591,4 +591,11 @@ section {
     .footer-nav {
         gap:1rem;
     }
+
+    .footer-logo img,
+    .footer-nav,
+    .footer-bottom p {
+        margin-left: 0 !important;
+        margin: 0 !important;
+    }
 }
